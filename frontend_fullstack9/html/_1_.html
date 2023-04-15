@@ -18,9 +18,53 @@
 <body>
     <!-- start codes -->
     <p>--Form--</p>
-    <form action="contact.html"></form>
+    <form action="contact.html" method="post">
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="">Username</label></td>
+                    <td><input type="text" name="Username" id="Username" required autofocus placeholder="Adınızı Yazınız..."></td>
+                </tr>
+                <tr>
+                    <td><label for="Email">Email</label></td>
+                    <td><input type="email" name="Email" id="Email" required placeholder="Email'inizi Yazınız..."></td>
+                </tr>
+                <tr>
+                    <td><label for="Password">Password</label></td>
+                    <td><input type="password" name="Password" id="Password" required placeholder="Şifrenizi Yazınız..."></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="reset">Temizle</button>
+                    <button type="submit">Gönder</button></td>
+                </tr>
+                <tr>
+                    <td><label for="Username">Dersler</label></td>
+                    <td>
+                        <input type="checkbox">JavaSE 
+                        <input type="checkbox">JavaME
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Cinsiyet</label></td>
+                    <td>
+                        <input type="radio" name="gender"> Erkek
+                        <input type="radio" name = "gender">Kadın
+                    </td>
+                </tr>
+                
+
+            </tbody>
+        </table>
+       
+        
+        
+
+    </form>
+
     <br>
     <hr>
+
     <p>--Map--</p>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20Amerika%20Birle%C5%9Fik%20Devletleri!5e0!3m2!1str!2str!4v1681552948026!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
@@ -35,6 +79,9 @@
         <source src="movie.mp4" type="video/mp4">
         <source src="movie.ogg" type="video/ogg">
     </video>
+    
+    <br>
+    <hr>
 
     <p>--Table--</p>
     <table>
@@ -69,8 +116,6 @@
         </tfoot>
     </table>
 
-    
-    
     <br>
     <hr>
     <a href="http://www.ecodation.com" target="_blank">Ecodation</a><br>
@@ -81,8 +126,8 @@
 
     <br>
     <hr>
-    <p>--Liste--</p>
 
+    <p>--Liste--</p>
     <ul>
         <li>item 1</li>
         <li>item 2</li>
@@ -100,7 +145,7 @@
     <hr>
 
     <label for="java">Bildiğiniz Teknoloji</label><br/>
-    <select name="java" id="java" >
+    <select name="java" id="java">  <!-- select name = "java" id = "java" multiple disabled-->
         <option value="0">Seçiniz</option>
         <option value="1">JavaSE</option>
         <option value="2">JavaME</option>
@@ -134,7 +179,7 @@
     
     <br>
     <hr>
-    
+    <!-- h${Heading $}*6 -->
     <p>Heading</p>
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
