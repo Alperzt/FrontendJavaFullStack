@@ -7,26 +7,21 @@
 html {
     font-size: 15px;
 }
-
 body {
     margin: 5%;
 }
-
 a{
     text-decoration: none;
     background-color: red;
     color: aliceblue;
-    padding: 5px;
-    text-transform: uppercase;
+    padding: 4.5px;
     border-radius: 12%;
 }
-
 a:hover{
     background-color: aliceblue;
     color: red;
     transition: 0.5s;
 }
-
 a:visited{
     background-color: black;
     color: red;
@@ -36,15 +31,13 @@ a:visited:hover{
     color: aliceblue;
     transition: 0.5s;
 }
-
 ul{
     list-style-type: none ;
 }
-
 ul li{
     background-color: rgb(255, 149, 0);
     padding: 2px 5px;
-    margin: 2px;
+    margin: 1%;
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
@@ -53,38 +46,33 @@ ul li{
 ul li:hover{
     cursor: pointer;
     background-color: rgb(199, 37, 37);
-    transition: 1s;
+    transition: 0.5s;
 }
-
 img{
     width: 100%;
     height: auto;
-    transition: 1.5s;
+    transition: .5s;
     margin-bottom: 1%;
 }
-
 img:hover{
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .9);
     cursor: pointer;
 }
 /* DATA */
-
 /* float kullanıyorsan bunu kullan*/
 .specialClearFix {
     content: "";
     display: block;
     clear: both;
 }
-
 h2 {
     color: indianred
 }
-
 .divClass {
     border: 1px solid #055;
-    margin: 2px;
+    margin: 1px;
     height: auto;
-    width: 99%;
+    width: 100%;
     float: left;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
@@ -92,16 +80,14 @@ h2 {
     border-top-right-radius: 4%;
     border-radius: 5%;
     /* kenarları yuvarlama*/
-
 }
-
 .divClass:hover {
     /* display: none; */
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .9); /* yatayda koordinat, dikeyde koordinat, dağılma, koyuluk */
 }
-
 /* paragrafa id verilirse #paragID{} şeklinde de yazılabilir*/
 .divClass p {
+    border: .5px solid black;
     color: blue;
     color: rgb(0, 0, 255);
     color: #055;
@@ -109,7 +95,6 @@ h2 {
     color: rgba(218, 39, 39, 0.9);
     /* sonundaki değer saydamlık*/
     background-color: cadetblue;
-
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -118,7 +103,6 @@ h2 {
     /* 4 tarfatan 10px kısayol*/
     padding: 10px 20px;
     /* yukarı ve aşağı 10px sağ ve sol 20px*/
-
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -131,7 +115,6 @@ h2 {
     text-shadow: -1px 0px ; /* x düzleminde ve y düzleminde gölgelendirme*/
     text-transform: uppercase;
     text-indent: 25px;/* paragraf başından girinti */
-
     /* 
     webkit: safari,opera,chrome
     moz: smozilla  
@@ -146,7 +129,6 @@ h2 {
     column-rule: 1.5px solid black; /* araya çizgi çekme*/
     
 }
-
 .divClass p:hover{
     cursor: pointer;
     color: black;
@@ -155,6 +137,5 @@ h2 {
     display: inline;
     display: inline-block;
     transition: 2s all;
-    transform: rotate(360deg);
-    
+    transform: rotate(360deg);   
 }
