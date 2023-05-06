@@ -43,4 +43,17 @@ alert(Math.sqrt(userData3));
 // Math rastgele
 console.log(Math.floor(Math.random()*9+1));
 
+// ÖDEV
+let userData = prompt("1. sayıyı girin");
+let userData1 = prompt("2. sayıyı girin");
+let minimum = Math.min(userData,userData1);
+let maximum = Math.max(userData,userData1)
+console.log("İki sayıdan en küçüğü : " + minimum);
+console.log("İki sayıdan en büyüğü : " + maximum);
+console.log("İki sayıdan en büyüğünün karekökü : " + Math.sqrt(Math.abs(maximum)));
+console.log("İki sayıdan en büyüğünün karekökünün üste yuvarlanmış hali : " + Math.ceil(Math.sqrt(Math.abs(maximum))));
+console.log("İki sayının en küçüğünün mutlak değeri : " + Math.abs(minimum));
+console.log("Küçüğü alt taban büyüğü üst taban : " + Math.pow(minimum,maximum));
+
+
 
