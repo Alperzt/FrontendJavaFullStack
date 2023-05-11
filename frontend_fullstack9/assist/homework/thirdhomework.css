@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+    background-color: red;
+    padding-bottom: 0.7rem;
+    max-height: 4rem;
+    font-weight: lighter;
+}
+p,label{
+    font-size: 1.4rem;
+    font-weight: light;
+    color: rgb(150,150,150);
+
+}
+.yüzdelik, .yüzdelik ul {
+    padding: 0;
+    
+}
+.yüzdelik li {
+    list-style: none;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #fbbe2f;
+    padding: .2rem;
+}
+.yüzdelik .asd{
+    border-right: 1px solid #fbbe2f;
+}
+
+.yüzdelik li:hover{
+    color: white;
+    background-color: #fbbe2f;
+    border: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+    p{
+        font-size:.7rem; 
+    }
+    label{
+        font-size: .9rem;
+    }
+    .yüzdelik .asd{
+      height: 2rem;
+      padding: .3rem;
+    }
+    .yüzdelik ul{
+        height: 2rem;
+        font-size:.7rem;  
+        text-align: center;
+    }
+  }
+#tutar, #vergiOrani{
+    border-radius: .3rem;
+    border: 1px solid rgb(220,220,220);
+}
+.vergiForm{
+    margin-bottom: 1rem;
+}
+.container .vergi li{
+    list-style: none;
+    top: 0;
+    left: 0;
+    
+}
+.vergi{
+    text-align: center;
+    border: .1rem solid #4bb1d9;
+    color: #4bb1d9;
+    margin-top: 1rem;
+    padding: 0;
+}
+.vergi li{
+    display: inline-block;
+    padding: .3rem;
+}
+.vergi .asd{
+    border-right: .1rem solid #4bb1d9 ;
+}
+.vergi li:hover {
+    background-color: #4bb1d9;
+    color: white;
+    cursor: pointer;
+}
