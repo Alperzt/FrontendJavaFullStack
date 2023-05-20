@@ -1,18 +1,16 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 15px;
 }
 
-body{
+body {}
 
-}
-
-h1{
+h1 {
     text-align: center;
     color: whitesmoke;
     background-color: red;
@@ -20,16 +18,21 @@ h1{
     max-height: 4rem;
     font-weight: lighter;
 }
-p,label{
+
+p,
+label {
     font-size: 1.4rem;
     font-weight: light;
-    color: rgb(150,150,150);
+    color: rgb(150, 150, 150);
 
 }
-.yüzdelik, .yüzdelik ul {
+
+.yüzdelik,
+.yüzdelik ul {
     padding: 0;
-    
+
 }
+
 .yüzdelik li {
     list-style: none;
     top: 0;
@@ -38,62 +41,95 @@ p,label{
     color: #fbbe2f;
     padding: .2rem;
 }
-.yüzdelik .asd{
+
+.yüzdelik .asd {
     border-right: 1px solid #fbbe2f;
 }
 
-.yüzdelik li:hover{
+.yüzdelik li:hover {
     color: white;
     background-color: #fbbe2f;
     border: none;
     cursor: pointer;
 }
+
 @media only screen and (max-width: 991px) {
-    p{
-        font-size:.7rem; 
+    p {
+        font-size: .7rem;
     }
-    label{
+
+    label {
         font-size: .9rem;
     }
-    .yüzdelik .asd{
-      height: 2rem;
-      padding: .3rem;
-    }
-    .yüzdelik ul{
+
+    .yüzdelik .asd {
         height: 2rem;
-        font-size:.7rem;  
+        padding: .3rem;
+    }
+
+    .yüzdelik ul {
+        height: 2rem;
+        font-size: .7rem;
         text-align: center;
     }
-  }
-#tutar, #vergiOrani{
-    border-radius: .3rem;
-    border: 1px solid rgb(220,220,220);
+
 }
-.vergiForm{
+
+#tutar,
+#vergiOrani {
+    border-radius: .3rem;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.vergiForm {
     margin-bottom: 1rem;
 }
-.container .vergi li{
+
+.container .vergi li {
     list-style: none;
     top: 0;
     left: 0;
-    
+
 }
-.vergi{
+
+.vergi {
     text-align: center;
     border: .1rem solid #4bb1d9;
     color: #4bb1d9;
     margin-top: 1rem;
     padding: 0;
 }
-.vergi li{
+
+.vergi li {
     display: inline-block;
     padding: .3rem;
 }
-.vergi .asd{
-    border-right: .1rem solid #4bb1d9 ;
+
+.vergi .asd {
+    border-right: .1rem solid #4bb1d9;
 }
+
 .vergi li:hover {
     background-color: #4bb1d9;
     color: white;
     cursor: pointer;
+}
+.price{
+    float: right;
+    color: white;
+}
+.toplam{
+    float: left;
+    width: 50%;
+    color: white;
+}
+.calculation{
+    margin: 1rem 0;
+    background-color: #2fbd8d;      
+}
+
+.container .row .main{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 80vh;
+
 }

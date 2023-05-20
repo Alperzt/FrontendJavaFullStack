@@ -10,14 +10,62 @@
     <meta name="author" content="Alper Bekar" />
     <meta name="keyword" content="html5,css3,js,bootstrap,react,ES5,jQuery" />
     <meta name="description" content="Portfoy Site" />
-
+    <style>
+        .tarihClass{
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- start codes -->
+    <p class="display-3">DOM</p>
+    <p id="tarihId"> Tarih : </p>
+    <button onclick="dateTime()" class="btn btn-dark">Date Time</button>
+    <script>
+        let dateTime = () =>{
+            let date = document.getElementById("tarihId");
+            //date.innerHTML = "<b>" + new Date() + "</b>";
+            //date.innerText = "<b>" +"Tarih : " + new Date() + "</b>";
+            date.innerText = "Tarih : " + new Date();
+            //date.style.color = "blue"; 
+            //date.classList.add("tarihClass");
+        }
+    </script>
+
+    <script>
+
+        localStorage.setItem("adi","Alper");
+        const userDataSetSurname = localStorage.setItem("soyadi","Bekar");
+
+        const userDataGetName = localStorage.getItem("adi");
+        console.log(userDataGetName.toUpperCase());
+
+        //const userDataRemove = localStorage.removeItem("soyadi");
+        console.log(localStorage);
+
+        //const userDataClear = localStorage.clear();
+        //console.log(userDataClear);
+
+        
+    </script>
     
+    <br><hr>
+    <p class="display-3">LISTENER</p>
+    <p id="param1">Lorem ipsum doloris? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, esse.
+        veritatis modi sunt?</p>
+    <script>
+        // listener
+        //addEventListener(event,callbackfnc);
+        let listenerData = document.getElementById('param1');
+        // DİKKAT: on başına yazmıyorsunuz. => click, dblclick, mouseover
+        listenerData.addEventListener("click", function (e) { alert("Tıklandı =>" + e.preventDefault+" =>"+e.target) });
+        // preventDefault: Browsera diyor ki sen bir şey yapma.
+    </script>
+
     <!--  ends codes -->
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
