@@ -7,8 +7,14 @@ let submitButton = () => {
 
     //JQuery
     let passwordData = $(`#pword`).val();
-    let localStorageSetPassword=localStorage.setItem("password",passwordData);
+    let localStorageSetPassword = localStorage.setItem("password",passwordData);
     let localStorageGetPword = localStorage.getItem("password");
     console.log(localStorageGetPword);
 }
 
+let hideForm = () => {
+    $("#formData").hide(2000);
+}
+let showForm = () => {
+    $("#formData").show(2000);
+}
